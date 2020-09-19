@@ -3,7 +3,7 @@
 /* Status of the operation requested */
 #define VALID   (1)
 #define INVALID (0)
-
+000
 /* Calculator operation requested by user*/
 unsigned int calculator_operation = 0;
 
