@@ -1,17 +1,18 @@
 # Name of the project
-PROJECT_NAME = calculator
+PROJECT_NAME = Calculator
 
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = project_main.c\
-src/calculator_operations.
+src/calculator_operations.c\
+
 # All test source files
 TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.h
+test/test_calculator_operations.c
 
-TEST_OUTPUT = $(BUILD)/test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc
@@ -32,12 +33,13 @@ all: $(SRC) $(BUILD)
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
-	
-# Build and run the unit tests
-test: $(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
-	./$(TEST_OUTPUT))
 
+
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
 clean:
