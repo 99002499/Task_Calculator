@@ -38,7 +38,8 @@ void test_kilotocentimeter(void);
 void test_kilotomillimeter(void);
 
 /* Start of the application test */
-int main() {
+int main() 
+{
 /* Note: Do not edit START*/
   /*Initialize and setup the Test Framework */
   if (CUE_SUCCESS != CU_initialize_registry())
