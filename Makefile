@@ -6,8 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = project_main.c\
-src/calculator_operations.c\
-
+src/calculator_operations.
 # All test source files
 TEST_SRC = src/calculator_operations.c\
 test/test_calculator_operations.h
@@ -35,7 +34,7 @@ run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
 	
 # Build and run the unit tests
-test:$(TEST_SRC) $(BUILD)
+test: $(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
 	./$(TEST_OUTPUT))
 
