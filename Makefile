@@ -12,7 +12,7 @@ src/calculator_operations.c\
 TEST_SRC = src/calculator_operations.c\
 test/test_calculator_operations.h
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc
